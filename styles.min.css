@@ -121,39 +121,10 @@ h6 {
 }
 
 
-.about-content {
-    color: #fff;
-    font-size: 5px;
-    font-weight: 100;
-    background: rgba(158, 158, 154, 0.2);
-    width: 200px;
-    text-align: center;
-	padding: 10px;
-	margin: auto;
-	padding-right: 20px;
-    margin-top: 20px;
-}
-.about-content2 {
-    color: #fff;
-    font-size: 10px;
-    font-weight: 100;
-    background: rgba(158, 154, 154, 0.2);
-    width: 200px;
-    text-align: center;
-	padding: 10px;
+
+
 	
-	
-}
-.about-content3{
-	color: #fff;
-    font-size: 5px;
-    font-weight: 100;
-    background: rgba(158, 154, 154, 0.2);
-    width: 50px;
-    text-align: center;
-	margin-top: 20px;
-	
-}
+
 
 
 
@@ -415,15 +386,7 @@ section {
     .night {
         background: url(./assets/tablet/bg-image-nighttime.jpg) center/cover no-repeat
     }
-    .about-content{
-		width: auto;
-	}
-	.about-content2{
-		width:auto;
-	}
-	.about-content3{
-		width:auto;
-	}
+  
 
 }
 
@@ -470,14 +433,6 @@ section {
         max-width: 1110px;
         margin: auto
     }
-    .about-content{
-		width: auto;
-	}
-	.about-content2{
-		width:auto;
-	}
-	.about-content3{
-		width:auto;
-	}
+   
 
 }
