@@ -24,73 +24,72 @@
 	<body class="day">
 		<main>
 			<section class="first-section">
-				<div class="container"><div class="container">
-					<div class="row">
-						<div class="about-content">
-							<div class="col-sm-12 col-md-12">
-								<blockquote id="quote" class="quote">
-									<p id="quote-text">
-										“The science of operations, as derived from
-										mathematics more especially, is a science of itself,
-										and has its own abstract truth and value.”
-									</p>
+				<div class="container">
+					<div class="container">
+						<div class="row">
+							<div class="about-content">
+								<div class="col-sm-12 col-md-12">
+									<blockquote id="quote" class="quote">
+										<p id="quote-text">
+											“The science of operations, as derived from
+											mathematics more especially, is a science of itself,
+											and has its own abstract truth and value.”
+										</p>
 									<cite id="quote-author" class="quote__author"
-										>Ada Lovelace</cite
-									>
+										>Ada Lovelace</cite>
 									<div id="quote-button" class="quote__button">
 										<i class="icon icon-refresh"></i>
 									</div>
-								</blockquote>
+									</blockquote>
+								</div>
 							</div>
-						</div>
 						
-						<div class=" col order-first"><div class="d-flex">
+							<div class=" col order-first">
+							<div class="d-flex">
 							<div class="about-content2">
-							<div class="clock">
-								<h4 class="clock__headline">
-									<i class="icon"></i>
-									<span id="greeting">Good Morning</span
-									><span>, it's currently</span>
-								</h4>
-								<h1 class="clock__time">
-									<span id="clock">XX:XX</span>
-									<!-- <small id="abbr">XXX</small> -->
-								</h1>
-								<h3 class="clock__location">
-									In <span id="city">XX</span>,
-									<span id="country">XX</span>
-								</h3>
-							</div></div></div>
+								<div class="clock">
+									<h4 class="clock__headline">
+										<i class="icon"></i>
+										<span id="greeting">Good Morning</span>
+										<span>, it's currently</span>
+									</h4>
+									<h1 class="clock__time">
+										<span id="clock">XX:XX</span>
+									</h1>
+									<h3 class="clock__location">In 	
+										<span id="city">XX</span>,
+										<span id="country">XX</span>
+									</h3>
+							</div>
+							</div>
+							</div>
 						</div>
 					
-					<div class="row">
-					  <div class="col-8"> 
-						<div class="about-content3">
-							<h2 class="city">Weathers</h2>
-							<h4 class="temp">51°C</h4>
-							<div class="flex">
-							<img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
-							<div class="description">Cloudy</div>
+						<div class="row">
+					  		<div class="col-8"> 
+								<div class="about-content3">
+									<h2 class="city">Weathers</h2>
+									<h4 class="temp">51°C</h4>
+									<div class="flex">
+									<img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+									<div class="description">Cloudy</div>
+									</div>
+									<div class="humidity">Humidity: 60%</div>
+									<div class="wind">Wind speed: 6.2 km/h</div></div>
+									</div>
+					  		<div class="col align-self-end"><button
+									id="more-less"
+									class="button"
+									data-more="more"
+									data-less="less"
+								>
+									<span>More</span> <i class="icon icon-up"></i>
+								</button>
 							</div>
-							<div class="humidity">Humidity: 60%</div>
-							<div class="wind">Wind speed: 6.2 km/h</div></div>
 							</div>
-					  <div class="col align-self-end"><button
-						id="more-less"
-						class="button"
-						data-more="more"
-						data-less="less"
-					>
-						<span>More</span> <i class="icon icon-up"></i>
-					</button>
-				</div></div>
+							</div>
+				 	 	</div>
 					</div>
-				  </div>
-				
-
-
-						
-				</div>
 			</section>
 			<section class="expand">
 				<div class="container grid">
@@ -117,12 +116,12 @@
 				</div>
 			</section>
 			
-		</main>
-		<!-- JavaScript Bundle with Popper -->
+	</main>
+		
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 
-		<!-- CDN example (unpkg) -->
+		
 		<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
 		<script src="script-display-time.js"></script>
 		<script src="script-display-information.js"></script>

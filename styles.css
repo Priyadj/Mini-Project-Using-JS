@@ -15,7 +15,7 @@
 	--color-white: hsl(0, 0%, 100%);
 	--color-hover: hsl(0, 0%, 60%);
 
-	/* alpha */
+	
 	--color-white-alpha: hsla(0, 0%, 100%, 75%);
 	--color-black-50: hsla(0, 0%, 0%, 50%);
 	--color-black-75: hsla(0, 0%, 0%, 75%);
@@ -25,10 +25,10 @@
 	display: none;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
+
 :root {
-	-ms-overflow-style: none; /* IE and Edge */
-	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; 
+	scrollbar-width: none; 
 }
 
 html  {
@@ -38,11 +38,10 @@ html  {
 html,
 body {
 	height: 100vh;
-	/* overflow: hidden; */
 }
 
 body {
-	/* padding: 3.11rem 0 5.55rem; */
+	
 	font-family: var(--font-family-base);
 	color: var(--color-white);
 	line-height: 28px;
@@ -56,7 +55,7 @@ body::before {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* HEADINGS */
+
 
 h1 {
 	margin: 0.88rem 0;
@@ -103,7 +102,6 @@ h6 {
 	padding:50px 25px 25px 50px;
 	margin: 50px 25px 25px  50px;
 }
-/* ICONS */
 
 .icon {
 	display: inline-block;
@@ -161,17 +159,14 @@ h6 {
     font-size: 19px;
     font-weight: 100;
     background: rgba(158, 154, 154, 0.2);
-    width: 470px;
-	white-space: nowrap;
+    width: 450px;
+	white-space:inherit;
     text-align: center;
 	margin-top: 5px;
 	
+	
 }
 
-
-
-
-/* BUTTON */
 
 .button {
 	cursor: pointer;
@@ -196,7 +191,7 @@ h6 {
 	margin-right: -8px;
 }
 
-/* QUOTE */
+
 
 .quote {
 	position: relative;
@@ -235,7 +230,6 @@ h6 {
 	}
 }
 
-/* MAIN ELEMENTS */
 main {
 	position: relative;
 	z-index: 1;
@@ -263,7 +257,6 @@ section {
 	height: 24px;
 }
 
-/* EXPAND */
 
 .expand {
 	display: none;
@@ -276,7 +269,6 @@ section {
 	display: block;
 }
 
-/* HANDLE DAY/NIGHT TRANSITION */
 .day {
 	background: url(./assets/mobile/bg-image-daytime.jpg) center/cover no-repeat;
 }
@@ -306,7 +298,6 @@ section {
 	background-color: var(--color-black-75);
 }
 
-/* TRANSLATE EFFECT */
 
 .translate {
 	transform: translateY(-256px);
@@ -319,7 +310,6 @@ section {
 	transform: rotate(0);
 }
 
-/* SHOW EFFECT */
 .quote,
 .d-flex {
 	opacity: 0;
@@ -335,7 +325,6 @@ section {
 	transition-delay: 0.4s;
 }
 
-/* RESPONSIVE */
 
 @media only screen and (max-width: 767px) {
 	.clock__headline span:last-child {
@@ -450,7 +439,7 @@ section {
 	}
 	.first-section {
 		padding: 3.11rem 0 5.55rem;
-		/* backdrop-filter: brightness(0.6); */
+		
 	}
 
 	.d-flex {
