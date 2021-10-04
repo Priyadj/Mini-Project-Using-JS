@@ -138,20 +138,17 @@ h6 {
     width: 400px;
     text-align: center;
 	padding: 10px;
-	margin: auto;
 	
 	padding-right: 20px;
-	margin-top: 20px;
+	margin: 10px;
 }
 .about-content2 {
     color: #fff;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 100;
     background: rgba(158, 154, 154, 0.2);
-    width: 450px;
     text-align: center;
 	padding: 10px;
-	margin-top: -20px;
 	
 }
 .about-content3{
@@ -159,12 +156,19 @@ h6 {
     font-size: 19px;
     font-weight: 100;
     background: rgba(158, 154, 154, 0.2);
-    width: 450px;
 	white-space:inherit;
     text-align: center;
-	margin-top: 5px;
+	padding: 10px;
+	margin-top: 10px;
 	
 	
+}
+
+.quote-wrapper {
+    background: rgba(158, 154, 154, 0.2);
+    text-align: center;
+	padding: 20px;
+	margin: 5px;
 }
 
 
@@ -204,11 +208,6 @@ h6 {
 	padding-right: 1rem;
 }
 
-.quote__button {
-	position: absolute;
-	top: 0;
-	right: 0;
-}
 
 .quote__author {
 	display: block;
@@ -385,6 +384,21 @@ section {
 		height: 56px;
 		font-size: 0.88rem;
 	}
+
+	.more-button {
+		display: flex;
+		justify-content: flex-end
+	}
+
+	.more-content {
+		display: inline-block;
+		align-self: flex-end;
+	}
+
+	.clock__time {
+		font-size: 10.5vw;
+	}
+
 	.quote {
 		position: relative;
 		font-size: 1rem;

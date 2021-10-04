@@ -8,46 +8,32 @@
 	}
 
 	async function getRandomQuote() {
-		const quoteURL = "https://mindjournal-app.herokuapp.com/";
-		const query = () => `{
-          quotes {
-            text
-            author {
-              name
-            }
-          }
-        }`;
+		const quoteURL = "https://type.fit/api/quotes";
 
-		const options = {
-			method: "post",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify({
-				query: query(),
-			}),
-		};
+		await fetch(quoteURL)
 
-		await fetch(quoteURL, options)
-			.then(response => response.json())
-			.then(({ data }) => {
-				let quotes = data.quotes;
-				let quotesLength = quotes.length;
-				let randomNumber = getRandomNumber(quotesLength);
-				let randomQuote = quotes[randomNumber];
 
-				const quoteContainer = document.getElementById("quote");
-				const quoteText = document.getElementById("quote-text");
-				const quoteAuthor = document.getElementById("quote-author");
-
-				quoteContainer.classList.add("quote-transition");
-
-				quoteText.innerHTML = randomQuote.text;
-				quoteAuthor.innerHTML = randomQuote.author.name;
-
-				quoteContainer.addEventListener("animationend", () => {
-					quoteContainer.classList.remove("quote-transition");
+			.then(response => {
+				response.text().then(function (text) {
+					let quotes = JSON.parse(text);
+					let quotesLength = quotes.length;
+					let randomNumber = getRandomNumber(quotesLength);
+					let randomQuote = quotes[randomNumber];
+	
+					const quoteContainer = document.getElementById("quote");
+					const quoteText = document.getElementById("quote-text");
+					const quoteAuthor = document.getElementById("quote-author");
+	
+					quoteContainer.classList.add("quote-transition");
+	
+					quoteText.innerHTML = randomQuote.text;
+					quoteAuthor.innerHTML = randomQuote.author;
+	
+					quoteContainer.addEventListener("animationend", () => {
+						quoteContainer.classList.remove("quote-transition");
+					});
 				});
+				
 			});
 	}
 
